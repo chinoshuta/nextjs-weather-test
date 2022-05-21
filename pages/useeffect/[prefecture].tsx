@@ -5,7 +5,8 @@ import styled from "styled-components";
 import axios from "axios";
 
 const HomeWrapper = styled.div`
-  width: 420px;
+  max-width: 420px;
+  width: auto;
   margin: 0 auto;
   text-align: center;
 `;

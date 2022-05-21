@@ -14,7 +14,8 @@ type Props = {
 };
 
 const HomeWrapper = styled.div`
-  width: 420px;
+  max-width: 420px;
+  width: auto;
   margin: 0 auto;
   text-align: center;
 `;

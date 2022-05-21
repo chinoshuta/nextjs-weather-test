@@ -5,7 +5,8 @@ import { prefectures } from "../constants/prefectures";
 import { useState } from "react";
 
 const HomeWrapper = styled.div`
-  width: 420px;
+  max-width: 420px;
+  width: auto;
   margin: 0 auto;
   padding: 15px;
   text-align: center;
