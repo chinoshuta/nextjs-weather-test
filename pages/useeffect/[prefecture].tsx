@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from 'next/image';
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
@@ -40,9 +41,7 @@ const Home: NextPage = () => {
         {weatherData?.weather[0]?.description}
         <br />
         {weatherData?.weather[0].icon && (
-          <img
-            src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
-          />
+          <Image src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} />
         )}
         <br />
         {weatherData?.main.temp}度

@@ -1,4 +1,5 @@
 import type { GetServerSideProps, NextPage } from "next";
+import Image from 'next/image';
 import styled from "styled-components";
 import axios from "axios";
 
@@ -51,9 +52,7 @@ const Home: NextPage<Props> = ({ weatherData }) => {
         {weatherData?.description}
         <br />
         {weatherData?.icon && (
-          <img
-            src={`http://openweathermap.org/img/wn/${weatherData.icon}@2x.png`}
-          />
+          <Image src={`http://openweathermap.org/img/wn/${weatherData.icon}@2x.png`} />
         )}
         <br />
         {weatherData?.temp}度
