@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         {weatherData?.weather[0]?.description}
         <br />
         {weatherData?.weather[0].icon && (
-          <Image src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} />
+          <Image width={100} height={100} src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} />
         )}
         <br />
         {weatherData?.main.temp}度

@@ -52,7 +52,7 @@ const Home: NextPage<Props> = ({ weatherData }) => {
         {weatherData?.description}
         <br />
         {weatherData?.icon && (
-          <Image src={`http://openweathermap.org/img/wn/${weatherData.icon}@2x.png`} />
+          <Image width={100} height={100} src={`http://openweathermap.org/img/wn/${weatherData.icon}@2x.png`} />
         )}
         <br />
         {weatherData?.temp}度
